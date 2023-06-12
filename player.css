@@ -5,8 +5,8 @@
 }
 
 body {
-    margin-left:150px;
-    margin-right:150px;
+  margin-left: 150px;
+  margin-right: 150px;
 }
 
 .topnav {
@@ -28,8 +28,9 @@ body {
   font-size: 18px;
 }
 
-.topnav input, .topnav button {
- height: 100%;
+.topnav input,
+.topnav button {
+  height: 100%;
 }
 
 .topnav a {
@@ -45,21 +46,18 @@ body {
 .floated {
   display: inline-block;
   margin-top: 65px;
+  clear: both;
+  *zoom: 1;
 }
 
-.floated:before,
-.floated:after {
+.floated::before,
+.floated::after {
   content: "";
   display: table;
 }
 
-.floated:after {
+.floated::after {
   clear: both;
-}
-
-.floated {
-  clear: both;
-  *zoom: 1;
 }
 
 .sidebar {
@@ -99,7 +97,7 @@ body {
 .main-bar {
   float: left;
   margin-left: 0 1.5%;
-  width: 30%
+  width: 30%;
 }
 
 .suggest {
@@ -107,7 +105,6 @@ body {
   margin-bottom: 10px;
   background-color: rgb(92, 38, 38);
   border-radius: 5px;
-  margin: 5px;
 }
 
 .suggest:hover {
@@ -125,8 +122,7 @@ body {
   margin-left: 10px;
 }
 
-.suggest
-.floated .main-bar {
+.suggest .floated .main-bar {
   display: block;
 }
 
@@ -149,7 +145,7 @@ body {
 }
 
 .follow-container .extra {
- margin-left: 0;
+  margin-left: 0;
   margin-bottom: 10px;
 }
 
@@ -173,17 +169,18 @@ body {
   margin-left: 30px;
 }
 
+.share-subscribe {
+  display: inline-block;
+}
+
 .follow-container .share-subscribe {
   display: flex;
   margin-top: -35px;
   margin-bottom: 200px;
 }
 
-.share-subscribe {
-  display: inline-block;
-}
-
-.share, .subscribe {
+.share,
+.subscribe {
   font-size: 14px;
   padding: 5px;
   margin-right: 10px;
